@@ -1,0 +1,56 @@
+--GIT
+git clone
+git init
+git status
+
+git commit
+git reset
+
+-------------------------------------------------------
+git branch
+git branch "branchName"
+***
+
+creating branch from existing branch
+--> git branch new_branch old_branch
+
+***
+git checkout "branch name" 
+-------------------------------------------------------
+" We use this command to get clear "
+
+git stash - but to do this we first have to staged the file  
+git stash pop
+git stash clear
+
+-------------------------------------------------------
+
+git remote
+git remote add origin "url" --> this will connect your local repo to the github repo 
+git remote -v
+git push origin master
+-------------------------------------------------------
+git fetch - only fetch meta data about the updates of remote repo to local repo
+git merge - 
+git pull - download the latest change
+-------------------------------------------------------
+***unstage***
+git restore --staged "file name"
+
+*** if we want to come back to certain commit and Remova commits above that from the history of a project -> then we first type "git log" and then we copy the hash value of the commit
+
+then we type " git reset {hashcode of commit on which you want to go back} "
+***
+
+"git stash clear" will clear the stash stack
+-------------------------------------------------------
+*** git-merge ***
+
+git status - to ensure that HEAD is pointing to correct merge-receiving branch.
+git checkout - to ensure to switch to the receiving branch
+git fetch - to pull the latest remote commits
+git pull - to ensure main is upto date
+
+-------------------------------------------------------
+
+helps you see, compare, and understand changes in your project.
